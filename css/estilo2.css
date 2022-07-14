@@ -1,0 +1,8 @@
+body::-webkit-scrollbar {
+  width: 9px;
+  background-color: rgb(24, 23, 23);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 83, 83);
+  border-radius: 50px;
+}

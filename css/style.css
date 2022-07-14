@@ -50,7 +50,13 @@ h4{
     font-size: 2.8rem;
 }
 img{
-    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+main{
+    width: min(1250px,100%);
+    margin: 0 auto;
 }
 
 
@@ -116,27 +122,28 @@ img{
     color: var(--blanco);
 }
 
+main > h3{
+    margin-left: 2.5rem;
+}
+
+/*MAIN*/
+
 @media (min-width: 768px) {
     .contenido-principal{
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
-}
+    .entrada__imagen{
+        width: 100%;
+        height: 280px;
+    }
 
-.entrada{
-    border-bottom: 1px solid var(--gris);
-    margin-bottom: 2rem;
-    
 }
-
 .entrada__contenido > h4 {
     margin-bottom: 2rem;
 }
-.entrada:last-of-type{
-    border: none;
-    margin-bottom: 0;
-}
+
 .entrada__imagen{
     position: relative;
 }
@@ -278,7 +285,7 @@ img{
 
 /*INFORMACION DE LA IMG*/
 
-.entrada__imagen picture img{
+.entrada__imagen img{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -286,7 +293,7 @@ img{
 
 }
 
-.entrada__imagen picture .capa{
+.entrada__imagen  .capa{
     position: absolute;
     top: 0;
     width: 100%;
@@ -300,7 +307,7 @@ img{
 
 }
 
-.entrada__imagen picture:hover > .capa{
+.entrada__imagen:hover > .capa{
     opacity: 1;
     visibility: visible;
 

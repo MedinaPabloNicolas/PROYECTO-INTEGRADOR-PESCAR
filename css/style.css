@@ -1,6 +1,8 @@
 :root {
-  --fuenteHeading: "PT Sans", sans-serif;
-  --fuenteParrafos: "Open Sans" sans-serif;
+  /*--fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Open Sans" sans-serif;*/
+  --fuenteHeading: "Noto Serif", serif;
+  --fuenteParrafos: "Noto Serif", serif;
 
   --primario: #784d3c;
   --blanco: #ffffff;
@@ -38,7 +40,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: var(--fuenteHeading);
   line-height: 1.2;
 }
@@ -48,7 +51,8 @@ h1 {
 h2 {
   font-size: 4rem;
 }
-h3 {
+h3,
+h5 {
   font-size: 3.2rem;
 }
 h4 {
@@ -96,7 +100,7 @@ img {
   }
 }
 .barra {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 .logo {
   color: var(--blanco);
@@ -107,18 +111,17 @@ img {
 .logo__bold {
   font-weight: 700;
 }
-@media (min-width: 768px) {
+
+/*@media (min-width: 800px) {
+
+  estilo que solo se aplicarán en el caso de que se cumpla un ancho minimo de 800px 
+  
   .navegacion {
+  
     display: flex;
     gap: 2rem;
-  }
-}
-.navegacion__enlace {
-  display: block;
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--blanco);
-}
+  } }
+  */
 
 @media (min-width: 768px) {
   .contenido-principal {

@@ -1,0 +1,86 @@
+body::-webkit-scrollbar {
+  width: 9px;
+  background-color: rgb(24, 23, 23);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 83, 83);
+  border-radius: 50px;
+}
+body {
+  font-family: "Noto Serif", serif;
+}
+
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+
+@media (max-width: 530px) {
+  /* se aplica solo cuando la pantalla alcanza un ancho de 530px */
+
+  .navegacion__enlace {
+    font-size: 1.4rem; /*cuando el ancho es de 530px, el tamaño de las letras cambia a 1.4rm */
+  }
+}
+
+.topbar a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  /* el subrayado de los a */
+  float: left;
+  /*
+  menu horizontal */
+}
+
+@media (max-width: 530px) {
+  .topbar a {
+    padding: 10px;
+  }
+}
+
+/*------- Necesario para el efecto de movimiento translateX------ */
+.topbar > a > span:after,
+.topbar > a > span:before {
+  opacity: 0;
+  transition: all 0.3s ease-out; /*arranca la barra y termina en 0.3s (posicion y movimiento)  */
+  position: absolute;
+}
+/*--------Dice en donde aparecen las barras-------*/
+.topbar > a > span:after {
+  content: "|";
+  transform: translateX(-1ex);
+}
+
+.topbar > a > span:before {
+  content: "|";
+  transform: translateX(0);
+}
+/* -------Para que aparescan las barras laterales-------*/
+.topbar > a:hover > span:after {
+  content: "|";
+  opacity: 1; /* no es translucido*/
+  transform: translateX(2ex);
+  position: absolute;
+}
+
+.topbar > a:hover > span:before {
+  content: "|";
+  opacity: 1;
+  transform: translateX(-3ex);
+  position: absolute;
+}
+
+.tres-columnas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  .tres-columnas {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

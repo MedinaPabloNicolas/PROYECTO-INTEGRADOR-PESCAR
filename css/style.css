@@ -119,10 +119,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
-.barra {
-  padding: 2rem 30rem;
+.barra {  /* Con 30 Rem se rompe todo el body al bajar de 600px */
+  padding: 2rem 2rem;
   
 }
 .logo {
@@ -134,15 +135,12 @@ img {
 .logo__bold {
   font-weight: 700;
 }
-
-@media (min-width: 800px) {
-
-  .navegacion {
-  
-    display: flex;
-    gap: 2rem;
-  } }
- 
+  @media (min-width: 300px) {
+    .navegacion{
+    justify-content: center;
+      display: flex;
+      gap: 2rem;
+    } }
 
 @media (min-width: 768px) {
   .contenido-principal {
@@ -220,8 +218,6 @@ img {
 
 .footer {
   background-color: var(--negro);
-  padding-bottom: 3rem;
-  margin-top: 4rem;
 }
 
 /*Sobre Nosotros*/

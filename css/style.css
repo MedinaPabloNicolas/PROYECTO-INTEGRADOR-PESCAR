@@ -122,7 +122,10 @@ img {
   }
 }
 .barra {
-  padding: 2rem 2rem;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap
 }
 .logo {
   color: var(--blanco);

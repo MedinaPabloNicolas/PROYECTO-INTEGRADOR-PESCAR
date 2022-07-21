@@ -30,7 +30,6 @@ body {
 /*Globales*/
 .contenedor {
   max-width: 100%;
-  width: 100%;
   margin: 0 auto;
   /* background-color: rgba(0, 0, 0, 0.466); */
 }
@@ -117,13 +116,13 @@ img {
 @media (min-width: 768px) {
   .barra {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .barra {
-  padding: 2rem 30rem;
-  
+  padding: 2rem 2rem;
 }
 .logo {
   color: var(--blanco);

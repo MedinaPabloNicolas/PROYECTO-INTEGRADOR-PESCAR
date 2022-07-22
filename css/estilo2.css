@@ -85,12 +85,16 @@ body {
   }
 }
 .contenedor {
-  max-width: 120rem;
   width: 90%;
+  text-align: center;
   margin: 0 auto;
-  /* background-color: rgba(0, 0, 0, 0.466); */
-}
 
+  /*  */
+}
+.contenedor h3,
+.contenedor h5 {
+  text-align: left;
+}
 /*rectangulo gris en el main como separador*/
 .separador {
   background-color: gray;
@@ -99,8 +103,14 @@ body {
 
 .pegado {
   position: fixed;
-  color: brown;
-  z-index: 2;
-  display: flex;
+  z-index: 5;
   top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.scroll-abajo {
+  background-color: rgba(0, 0, 0, 0.485);
+  width: 100%;
+  border-bottom-width: solid;
+  border-bottom-color: bisque;
 }

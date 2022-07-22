@@ -27,7 +27,7 @@ body {
   line-height: 2;
 }
 
-/*-----------Globales-------------*/
+/*-----------Globales-------------g*/
 
 a {
   text-decoration: none;
@@ -115,7 +115,8 @@ img {
   }
 }
 .barra {
-  padding: 2rem;
+  justify-content: space-evenly;
+  padding: 1.5rem 0;
 }
 .logo {
   color: var(--blanco);

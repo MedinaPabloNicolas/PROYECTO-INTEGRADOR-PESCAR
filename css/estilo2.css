@@ -47,14 +47,6 @@ body {
   color: var(--blanco);
 }
 
-@media (max-width: 530px) {
-  /* se aplica solo cuando la pantalla alcanza un ancho de 530px */
-
-  .navegacion__enlace {
-    font-size: 1.4rem; /*cuando el ancho es de 530px, el tamaño de las letras cambia a 1.4rm */
-  }
-}
-
 .topbar a {
   color: white;
   padding: 20px;
@@ -64,13 +56,6 @@ body {
   /*
   menu horizontal */
 }
-
-@media (max-width: 530px) {
-  .topbar a {
-    padding: 10px;
-  }
-}
-
 /*--Necesario para el efecto de movimiento translateX--- */
 .topbar > a > span:after,
 .topbar > a > span:before {

@@ -1,3 +1,14 @@
+/* ------------------global-------------------- */
+.contenedor {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.contenedor h3, /* escepciones a los titulos  */
+.contenedor h5 {
+  text-align: left;
+}
+
 body::-webkit-scrollbar {
   width: 9px;
   background-color: rgb(24, 23, 23);
@@ -8,6 +19,25 @@ body::-webkit-scrollbar-thumb {
 }
 body {
   font-family: "Noto Serif", serif;
+}
+
+/* -----------------en el header-------------- */
+
+.pegado {
+  /* se activa cuando scrolleo para abajo*/
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.scroll-abajo {
+  /* se crea cuando scroleo para abajo*/
+  background-color: rgba(0, 0, 0, 0.485);
+  width: 100%;
+  border-bottom-width: solid;
+  border-bottom-color: bisque;
 }
 
 .navegacion__enlace {
@@ -25,7 +55,6 @@ body {
   }
 }
 
-
 .topbar a {
   color: white;
   padding: 20px;
@@ -42,14 +71,14 @@ body {
   }
 }
 
-/*------- Necesario para el efecto de movimiento translateX------ */
+/*--Necesario para el efecto de movimiento translateX--- */
 .topbar > a > span:after,
 .topbar > a > span:before {
   opacity: 0;
   transition: all 0.3s ease-out; /*arranca la barra y termina en 0.3s (posicion y movimiento)  */
   position: absolute;
 }
-/*--------Dice en donde aparecen las barras-------*/
+/*--Dice en donde aparecen las barras---*/
 .topbar > a > span:after {
   content: "|";
   transform: translateX(-1ex);
@@ -59,7 +88,7 @@ body {
   content: "|";
   transform: translateX(0);
 }
-/* -------Para que aparescan las barras laterales-------*/
+/* --Para que aparescan las barras laterales--*/
 .topbar > a:hover > span:after {
   content: "|";
   opacity: 1; /* no es translucido*/
@@ -68,20 +97,30 @@ body {
 }
 
 .topbar > a:hover > span:before {
+  /*  */
   content: "|";
   opacity: 1;
   transform: translateX(-3ex);
   position: absolute;
 }
 
+/* ----------------en el main--------------- */
+
 .tres-columnas {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 30px;
+  gap: 40px;
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .tres-columnas {
     display: grid;
     grid-template-columns: auto;
   }
+}
+
+.separador {
+  /*rectangulo gris en el main como separador*/
+
+  background-color: gray;
+  padding: 15vh;
 }

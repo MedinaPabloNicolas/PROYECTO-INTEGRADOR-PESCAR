@@ -128,15 +128,13 @@ img {
   font-weight: 700;
 }
 
-/*@media (min-width: 800px) {
-
+@media (min-width: 300px) {
   .navegacion {
-  
+    justify-content: center;
     display: flex;
     gap: 2rem;
   }
- }
- */
+}
 
 .entrada {
   border-bottom: 1px solid var(--gris);
@@ -206,8 +204,8 @@ img {
 
 .footer {
   background-color: var(--negro);
-  /*padding-bottom: 3rem;*/
-  margin-top: 3rem;
+  /*padding-bottom: 3rem;
+  margin-top: 3rem; */
 }
 
 /*Sobre Nosotros*/

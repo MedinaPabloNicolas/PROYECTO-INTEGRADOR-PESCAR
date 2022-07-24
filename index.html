@@ -31,23 +31,29 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--link a carpeta js-->
-    <script src="js/acciones.js"></script>
+    
+
+    <!--script iconos-->
+    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+
 
 
 </head>
 
 <body>
     <header class="header ">
-        <div class="pegado barra">
+        <div class="pegado barra" id="background">
             <a class="logo" href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
             </a>
 
-            <nav class="navegacion topbar">
-                <a href="nosotros.html" class="navegacion__enlace"><span> Nosotros</span></a>
-                <a href="cursos.html" class="navegacion__enlace"><span>Membresia</span></a>
-                <a href="contacto.html" class="navegacion__enlace"><span>Categoria</span></a>
-                <a href="menu.html" class="navegacion__enlace  "><span>Menu</span></a>
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+            <nav class="navegacion topbar menu" id="menu">
+                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
+                <a href="cursos.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+                <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Categoria</span></a>
+                <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
             </nav>
         </div>
         <div class="header__texto">
@@ -257,6 +263,8 @@
             </nav>
         </div>
     </footer>
+
+    <script src="js/acciones.js"></script>
 </body>
 
 </html>

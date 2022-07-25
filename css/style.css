@@ -82,16 +82,16 @@ img {
 }
 @keyframes header {
   0% {
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/zyro-image.png");
   }
   25% {
-    background-image: url("../img/blog1.jpg");
+    background-image: url("../img/categoria.jpg");
   }
   50% {
-    background-image: url("../img/blog2.jpg");
+    background-image: url("../img/membresia.jpg");
   }
   75% {
-    background-image: url("../img/blog3.jpg");
+    background-image: url("../img/banner.jpg");
   }
   100% {
     background-image: url("../img/curso1.jpg");

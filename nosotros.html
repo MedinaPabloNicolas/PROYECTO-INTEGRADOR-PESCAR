@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El comienzo de algo grande</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mp-tercer-proyecto</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
 
-    <!--Prefetch
-    <link rel="prefetch" href="nosotros.html" as="document">-->
+    <!--link estilo2-->
+    <link rel="stylesheet" href="css/estilo2.css" />
 
     <!--Link Preload-->
-    <link rel="prereload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="prereload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="prereload"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font"
-        crossorigin="crossorigin">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <!--Link fuente Noto Serif italica-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link fuente Noto Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="prereload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="prereload" href="css/style.css" as="style">-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--script iconos-->
+    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+
 </head>
-
+ 
 <body>
-    <header class="header">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
-                </a>
+    <header class="header ">
+        <div class="pegado barra" id="background">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
+            </a>
 
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+            <nav class="navegacion topbar menu" id="menu">
+                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
+                <a href="memresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+                <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Categoria</span></a>
+                <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
+            </nav>
         </div>
         <div class="header__texto">
-            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <!--se encarga pablito de que quede bien en pantallas de celulares-->
+            <h2 class="no-margin">Las Mejores Recetas</h2>
             <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
 
         </div>
     </header>
-    <main class="contenedor">
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
-            </div>
-            <div class="sobre-nosotros__texto">
-                <p>Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it
-                    to make a type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem
-                    Ipsum.
-                </p>
-            </div>
-        </div>
+
+    <main>
+
     </main>
 
     <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
+      <div class="barra">
+        <a class="logo logo__footer" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">
+            Your<span class="logo__bold">Time</span>
+          </h1>
+        </a>
+        <nav class="nav-footer topbar">
+          <a href="donacion.html" class="navegacion__enlace"
+            ><span>Donacion</span></a
+          >
+          <a href="salud.html" class="navegacion__enlace"
+            ><span>Salud y Nutricion</span></a
+          >
+          <a href="contacto.html" class="navegacion__enlace"
+            ><span>Contacto</span></a
+          >
+        </nav>
+      </div>
     </footer>
+
+    <script src="js/acciones.js"></script>
+
 </body>
 
 </html>

@@ -28,7 +28,13 @@ body {
   
 }
 
-/*-----------Globales-------------g*/
+/*Globales*/
+.contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+  /* background-color: rgba(0, 0, 0, 0.466); */
+}
+/*-----------Globales-------------*/
 
 a {
   text-decoration: none;
@@ -66,9 +72,7 @@ img {
 .no-padding {
   padding: 0;
 }
-.centrar-texto {
-  text-align: center;
-}
+
 
 /*------------------Header------------------*/
 .header {
@@ -77,9 +81,9 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   /* backface-visibility: hidden; */
-  animation: header 100s linear infinite 10s;
+  animation: header 50s linear infinite 3s;
   animation-timing-function: ease-in-out;
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/zyro-image.png");
 }
 @keyframes header {
   0% {
@@ -107,19 +111,35 @@ img {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+.barra {  /* version movil */
+  padding: 1.5rem 0;
+  justify-content: center;
+  height: 10%;
+  
+}
+
+@media (min-width: 980px) { /* a partir de 980px esto */
   .barra {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    height: max-content;
+    padding: 0 2rem;
   }
+  
 }
-.barra {  /* Con 30 Rem se rompe todo el body al bajar de 600px */
-  padding: 2rem 2rem;
+
+@media (min-width: 1240px) { /* a partir de 1240px esto */
+  .barra {
+    display: flex;
+    justify-content: space-evenly;
+    height: max-content;
+  }
   
 }
 .logo {
+  display: block;
+  width: max-content;
+  margin: auto 0;
   color: var(--blanco);
 }
 .logo__nombre {
@@ -129,14 +149,20 @@ img {
   font-weight: 700;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 980px) {
   .navegacion {
-    justify-content: center;
+    justify-content: flex-end;
     display: flex;
     gap: 2rem;
   }
 }
 
+.navegacion {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+ 
 .entrada {
   border-bottom: 1px solid var(--gris);
   margin-bottom: 2rem;
@@ -163,7 +189,7 @@ img {
   margin-bottom: 2rem;
   border: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .boton {
     display: inline-block;
   }
@@ -205,13 +231,32 @@ img {
 
 .footer {
   background-color: var(--negro);
-  /*padding-bottom: 3rem;
-  margin-top: 3rem; */
+  padding:3rem 0;
+  margin-top: 3rem;
+}
+
+.logo__footer{
+  text-align: center;
+  width: auto;
+}
+
+@media (min-width: 980px) {
+  .nav-footer {
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /*Sobre Nosotros*/
 
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .sobre-nosotros {
     display: flex;
     justify-content: space-between;
@@ -227,7 +272,7 @@ img {
   padding: 3rem 0;
   border-bottom: 1px solid var(--gris);
 }
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .curso {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -306,4 +351,70 @@ img {
 .entrada__imagen picture:hover > .capa {
   opacity: 1;
   visibility: visible;
+}
+
+/*MENU HAMBURGUESA*/
+
+.mostrar-background{
+  width: 100vw;
+  height: 80%;
+  background: #555
+}
+.nav-bar{
+  padding: 20px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  width: max-content;
+  margin: 0 0 0 auto;
+  position: absolute;
+  top: 6px;
+  right: 25px;
+}
+
+.menu{
+  background: #555;
+  width: 100%;
+  margin-top: -100vh;
+  transition: all 0.3s;
+}
+
+.menu__link{
+  display: block;
+  padding: 20px;
+  color: white;
+  font-size: 1.2em ;
+  text-decoration: none;
+}
+
+.menu__link:hover{
+  background: #444;
+}
+
+.mostrar{
+  margin-top: 0;
+  flex-direction: column;
+}
+
+@media(min-width: 980px) {
+  .nav-bar {
+    display: none;
+  }
+  .menu {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    background-color: transparent;
+  }
+  .menu__link{
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 2rem ;
+    text-decoration: none;
+  }
+  .menu__link:hover{
+    background: transparent;
+  }
 }

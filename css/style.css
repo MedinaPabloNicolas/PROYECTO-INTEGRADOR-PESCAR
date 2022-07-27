@@ -114,7 +114,7 @@ img {
 .barra {  /* version movil */
   padding: 1.5rem 0;
   justify-content: center;
-  height: 10%;
+  height: 20%;
   
 }
 
@@ -151,8 +151,9 @@ img {
 
 @media (min-width: 980px) {
   .navegacion {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
+    
     gap: 2rem;
   }
 }
@@ -252,6 +253,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 /*Sobre Nosotros*/
@@ -401,7 +403,8 @@ img {
   .nav-bar {
     display: none;
   }
-  .menu {
+  
+ .menu {
     width: 50%;
     margin: 0;
     display: flex;

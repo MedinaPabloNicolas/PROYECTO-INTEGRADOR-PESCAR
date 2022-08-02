@@ -418,3 +418,53 @@ img {
     background: transparent;
   }
 }
+
+/*MEMBRESIA.HTML TABLA DE PRECIOS*/
+
+.contenedor_tabla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--blanco);
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.titulo_box1,
+.titulo_box2,
+.titulo_box3,
+.titulo_box4{
+  margin:0;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.titulo_box1{
+  background-color:  rgb(149, 165, 166);
+}
+.titulo_box2{
+  background-color:  rgb(244, 208, 63);
+}
+.titulo_box3{
+  background-color:  rgb(118, 215, 196);
+}
+.titulo_box4{
+  background-color: rgb(208, 211, 212);
+}
+
+
+
+.box{
+  width: 350px;
+  overflow: hidden;
+  text-align: center;
+  border:1px solid var(--gris);
+}
+
+.box > ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}

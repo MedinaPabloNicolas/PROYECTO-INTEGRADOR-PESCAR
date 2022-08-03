@@ -418,3 +418,8 @@ img {
     background: transparent;
   }
 }
+/* Donaciones   */
+.donacion{
+  height: 120px;
+  width: 200px;
+}

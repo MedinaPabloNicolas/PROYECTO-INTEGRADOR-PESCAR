@@ -32,11 +32,7 @@
     <!-- <link rel="prereload" href="css/style.css" as="style">-->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--script iconos-->
-    <script
-      src="https://kit.fontawesome.com/4fcd992977.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
 
   <body>
@@ -60,17 +56,31 @@
             ><span class="menu__link">Membresia</span></a
           >
           <a href="contacto.html" class="navegacion__enlace menu__item"
-            ><span class="menu__link">Categoria</span></a
-          >
-          <a href="menu.html" class="navegacion__enlace menu__item"
-            ><span class="menu__link">Menu</span></a
-          >
+            ><span class="menu__link">Login</span></a>
+
         </nav>
       </div>
       <div class="header__texto">
-        <h2 class="no-margin">Menu</h2>
-        <p class="no-margin">filtrar por tiempo, ingredientes o plato</p>
-      </div>
+        <h2 class="no-margin">Elejir por tiempo, ingredientes o plato</h2>
+        <!--<p class="no-margin">filtrar por tiempo, ingredientes o plato</p>
+      </div>-->
+
+      <section class="tiempo">
+        <i class="fa-solid fa-clock label"></i>
+        <div class="item"><span>30 min.</span></div>
+        <div class="item"><span>30-60 min.</span></div>
+        <div class="item"><span>60-120 min.</span></div>
+      </section>
+
+      <section class="canasta">
+        <input type="text" class="buscar--texto" placeholder="Ingrese 2 o mas ingredientes">
+        <i class="fa-solid fa-basket-shopping icono--boton"></i>
+      </section>
+
+      <section class="lupa">
+        <input type="text" class="buscar--texto" placeholder="Ingrese que plato desea cocinar">
+        <i class="fa-solid fa-magnifying-glass icono--boton"></i>
+      </section>
     </header>
 
     <main></main>
@@ -95,6 +105,12 @@
         </nav>
       </div>
     </footer>
+
+    <!--script iconos-->
+    <script
+      src="https://kit.fontawesome.com/4fcd992977.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="js/acciones.js"></script>
   </body>

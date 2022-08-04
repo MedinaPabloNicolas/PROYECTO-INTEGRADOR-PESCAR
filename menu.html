@@ -1,117 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El comienzo de algo grande</title>
 
-    <!--Prefetch-->
-    <link rel="prefetch" href="nosotros.html" as="document" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El comienzo de algo grande</title>
 
-    <!--link estilo2-->
-    <link rel="stylesheet" href="css/estilo2.css" />
+  <!--Prefetch-->
+  <link rel="prefetch" href="nosotros.html" as="document" />
 
-    <!--Link Preload-->
-    <link rel="prereload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css" />
+  <!--link estilo2-->
+  <link rel="stylesheet" href="css/estilo2.css" />
 
-    <!--Link fuente Noto Serif italica-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <!--Link fuente Noto Serif -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+  <!--Link Preload-->
+  <link rel="prereload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- <link rel="prereload" href="css/style.css" as="style">-->
-    <link rel="stylesheet" href="css/style.css" />
+  <!--Link fuente Noto Serif italica-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+  <!--Link fuente Noto Serif -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/menu.css" />
-  </head>
+  <!-- <link rel="prereload" href="css/style.css" as="style">-->
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <header class="header">
-      <div class="pegado barra" id="background">
-        <a class="logo" href="index.html">
-          <h1 class="logo__nombre no-margin centrar-texto">
-            Your<span class="logo__bold">Time</span>
-          </h1>
-        </a>
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
 
-        <span class="nav-bar" id="btnMenu"
-          ><i class="fa-solid fa-bars"></i
-        ></span>
+<body>
+  <header class="header">
+    <div class="pegado barra" id="background">
+      <a class="logo" href="index.html">
+        <h1 class="logo__nombre no-margin centrar-texto">
+          Your<span class="logo__bold">Time</span>
+        </h1>
+      </a>
 
-        <nav class="navegacion topbar menu" id="menu">
-          <a href="nosotros.html" class="navegacion__enlace menu__item"
-            ><span class="menu__link"> Nosotros</span></a
-          >
-          <a href="memresia.html" class="navegacion__enlace menu__item"
-            ><span class="menu__link">Membresia</span></a
-          >
-          <a href="contacto.html" class="navegacion__enlace menu__item"
-            ><span class="menu__link">Login</span></a>
+      <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
 
-        </nav>
-      </div>
-      <div class="header__texto">
-        <h2 class="no-margin">Elejir por tiempo, ingredientes o plato</h2>
-        <!--<p class="no-margin">filtrar por tiempo, ingredientes o plato</p>
+      <nav class="navegacion topbar menu" id="menu">
+        <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
+        <a href="memresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+        <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
+
+      </nav>
+    </div>
+    <div class="header__texto">
+      <h2 class="no-margin">Elejir por tiempo, ingredientes o plato</h2>
+      <!--<p class="no-margin">filtrar por tiempo, ingredientes o plato</p>
       </div>-->
+      <article class="iconos-alineados">
+        <div class="tiempo">
+          <i class="fa-solid fa-clock label"></i>
 
-      <section class="tiempo">
-        <i class="fa-solid fa-clock label"></i>
-        <div class="item"><span>30 min.</span></div>
-        <div class="item"><span>30-60 min.</span></div>
-        <div class="item"><span>60-120 min.</span></div>
-      </section>
+          <div class="item"><span>30 min.</span></div>
+          <div class="item"><span>30-60 min.</span></div>
+          <div class="item"><span>60-120 min.</span></div>
 
-      <section class="canasta">
-        <input type="text" class="buscar--texto" placeholder="Ingrese 2 o mas ingredientes">
-        <i class="fa-solid fa-basket-shopping icono--boton"></i>
-      </section>
+        </div>
 
-      <section class="lupa">
-        <input type="text" class="buscar--texto" placeholder="Ingrese que plato desea cocinar">
-        <i class="fa-solid fa-magnifying-glass icono--boton"></i>
-      </section>
-    </header>
+        <div class="canasta">
+          <input type="text" class="buscar--texto" placeholder="Ingrese 2 o + ingredientes" id="mostrar-texto-canasta">
+          <i class="fa-solid fa-basket-shopping icono--boton " id="boton-buscar-texto1"></i>
+        </div>
 
-    <main></main>
+        <div class="lupa">
+          <input type="text" class="buscar--texto" placeholder="Ingrese plato deseado" id="mostrar-texto-lupa">
 
-    <footer class="footer">
-      <div class="barra">
-        <a class="logo logo__footer" href="index.html">
-          <h1 class="logo__nombre no-margin centrar-texto">
-            Your<span class="logo__bold">Time</span>
-          </h1>
-        </a>
-        <nav class="nav-footer topbar">
-          <a href="donacion.html" class="navegacion__enlace"
-            ><span>Donacion</span></a
-          >
-          <a href="salud.html" class="navegacion__enlace"
-            ><span>Salud y Nutricion</span></a
-          >
-          <a href="contacto.html" class="navegacion__enlace"
-            ><span>Contacto</span></a
-          >
-        </nav>
-      </div>
-    </footer>
+          <i class="fa-solid fa-magnifying-glass icono--boton" id="boton-buscar-texto2"></i>
+        </div>
+      </article>
+  </header>
 
-    <!--script iconos-->
-    <script
-      src="https://kit.fontawesome.com/4fcd992977.js"
-      crossorigin="anonymous"
-    ></script>
+  <main></main>
 
-    <script src="js/acciones.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="barra">
+      <a class="logo logo__footer" href="index.html">
+        <h1 class="logo__nombre no-margin centrar-texto">
+          Your<span class="logo__bold">Time</span>
+        </h1>
+      </a>
+      <nav class="nav-footer topbar">
+        <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
+        <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+        <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!--script iconos-->
+  <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+
+  <script src="js/acciones.js"></script>
+</body>
+
 </html>

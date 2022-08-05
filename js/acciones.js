@@ -28,7 +28,7 @@ buscarTexto.addEventListener('click', function () { //le digo que cuando le haga
 
     mostrarTextoCanasta.classList.toggle('buscar--texto--abierto');//hago toggle por esta clase
 });
-//idem anterior
+//idem anterior lupa
 const buscarTexto2 = document.getElementById('boton-buscar-texto2');
 buscarTexto2.addEventListener('click', function () {
     let mostrarTextoLupa = document.getElementById('mostrar-texto-lupa');

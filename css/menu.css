@@ -128,7 +128,7 @@
   .iconos-alineados {
     display: flex;
     align-items: flex-start;
-    padding-top: 50px;
+    padding-top: 25vh;
     justify-content: space-around;
   }
   input[type="text"] {

@@ -13,6 +13,9 @@ btnMenu.addEventListener('click', function () {
     menu.classList.toggle('mostrar');
     background.classList.toggle('mostrar-background');
 });
+//-------------------------------------------------------------------//
+/*------aparece y desaparece el rectangulo de texto en menu.css------*/
+//-------------------------------------------------------------------//
 
 /*tiempo*/
 
@@ -27,10 +30,6 @@ buscarTiempo.addEventListener('click', function () {
     pepe[0].classList.remove("buscar--texto--abierto");
     pepe[1].classList.remove("buscar--texto--abierto");
 });
-
-//-------------------------------------------------------------------//
-/*------aparece y desaparece el rectangulo de texto en menu.css------*/
-//-------------------------------------------------------------------//
 
 //canasta
 const buscarTexto = document.getElementById('boton-buscar-texto1');//con la constante agarro el id del icono

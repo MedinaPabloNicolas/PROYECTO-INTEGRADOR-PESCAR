@@ -53,6 +53,7 @@
   }
   .item:nth-child(1):hover,
   .item:nth-child(2):hover,
+  .item:nth-child(3):hover,
   .item:nth-child(4):hover {
     font-size: medium;
   }

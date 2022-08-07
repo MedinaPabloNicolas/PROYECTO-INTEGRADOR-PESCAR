@@ -77,6 +77,7 @@ img {
 /*------------------Header------------------*/
 .header {
   height: 100vh;
+  margin-bottom: 3rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -422,49 +423,64 @@ img {
 /*MEMBRESIA.HTML TABLA DE PRECIOS*/
 
 .contenedor_tabla{
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: var(--blanco);
-  gap: 5rem;
   flex-wrap: wrap;
+  gap: 10px 30px;
 }
 
-.titulo_box1,
-.titulo_box2,
-.titulo_box3,
-.titulo_box4{
-  margin:0;
-  padding: 3rem 1rem;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-.titulo_box1{
-  background-color:  rgb(149, 165, 166);
-}
-.titulo_box2{
-  background-color:  rgb(244, 208, 63);
-}
-.titulo_box3{
-  background-color:  rgb(118, 215, 196);
-}
-.titulo_box4{
-  background-color: rgb(208, 211, 212);
-}
-
-
-
-.box{
-  width: 350px;
-  overflow: hidden;
+.tabla_precio{
+  width: 400px;
+  height: 550px;
+  margin: auto;
+  border: 1px solid var(--gris);
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px var(--gris);
+  padding: 60px;
   text-align: center;
-  border:1px solid var(--gris);
+  color: #343759;
+  
 }
 
-.box > ul{
-  list-style: none;
+.tabla_precio h2 {
+  display: block;
+  font-size: 40px;
+  margin:0 0 35px 0;
+}
+
+.tabla_precio h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.tabla_precio > p {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.boton_precio{
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background: #a5f059;
+  text-decoration: none;
+  color: #343759;
+  border-radius: 100px;
   text-align: center;
-  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.tabla_precio:hover {
+  background: #343759;
+  color: var(--blanco);
+  transition: 0.2 all;
+  transform: scale(1.1);
+  cursor: pointer;
 }

@@ -14,6 +14,7 @@
   display: block;
 }
 
+
 @media (min-width: 460px) {
   .tiempo {
     text-transform: uppercase; /* texto en mayuscula*/
@@ -138,6 +139,7 @@
     border-radius: 9px;
     outline: none; /* necesario para que el focus cambie el borde*/
     border: 2px solid white;
+    text-transform: lowercase;
   }
   input[type="text"]:focus {
     /*para cambiar el color al borde del input cuando esta seleccionado*/

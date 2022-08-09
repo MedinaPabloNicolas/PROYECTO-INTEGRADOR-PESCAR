@@ -15,6 +15,7 @@
     <!--Link Preload-->
     <link rel="prereload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/donaciones.css">
 
     <!--Link fuente Noto Serif italica-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,39 +58,48 @@
             <!--se encarga pablito de que quede bien en pantallas de celulares-->
             <h1 class="no-margin">Beneficencia</h1>
             
-            <div class="contenedor_donacion">
-              <p>
-                <h3>¿Cual es el objetivo de estas donaciones?</h3>
-                Uno de los principales objetivos de Your time® es ayudar a los sectores mas vulnerables enfocándonos por el momento en los comedores comunitarios.
-                <h3>¿Solamente van a enfocarse en buenos Aires?</h3>
-                No, a medida que crezca el proyecto vamos a hacer lo posible para llegar a todos los rincones del país.
-                <h3>¿ Pregunta donaciones 3? </h3>
-                Respuesta donacions 3
-                <h3> </h3>
-              </p>
-
-
-
-                
-                
-                
-                
-                <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quo aspernatur velit laboriosam quos repellat ad maiores sapiente sequi consequuntur, vel aut dolore? Error voluptas laborum accusantium, fugit delectus dignissimos!
-                Ex vitae asperiores, tenetur magnam veritatis odio tempore suscipit necessitatibus fugiat earum alias nihil a repellat possimus itaque in, eligendi eveniet adipisci quod explicabo corporis aliquid 
-                </p>
-                <button class="boton_donacion" >
-                  <input class="img_donacion" type="image" src="/img/mercadopago2.png"/>
-                </button>
-                
-            </div>
+            
 
         </div>
     </header>
+<br>
+    <main >
+      <section id="preguntas" class="contenedor_Donacion">
+        
+          <h3>¿Cual es el objetivo de estas donaciones?</h3> 
+          <p>Uno de los principales objetivos de Your time® es ayudar a los sectores mas vulnerables enfocándonos por el momento en los comedores comunitarios.</p>
+          <h3>¿Solamente van a enfocarse en buenos Aires?</h3>
+          <p>No, a medida que crezca el proyecto vamos a hacer lo posible para llegar a todos los rincones del país.</p>
+          <h3>¿Que medios de pago utilizan? </h3>
+          <p>En un pricipio vamos a usar Mercado Pago y luego vamos a incorporar otros diversos medios.</p>
+          
 
-    <main>
-
-
-
+          
+      </section>
+      <div class="contenedor_Donacion">
+      <input class="boton_Donacion" type="submit" value="Preguntas Frecuentes" onclick="mostrar_Ocultar()">
+      
+      </div>
+      <section class="contenedor_Donacion ">
+        <p>En esta seccion te animamos a ayudar a Los comedores comunitarios mas necesitados del pais con lo que puedas aportar mediante Mercado pago</p>
+      <div class="flex">
+      
+        <a href="https://www.mercadopago.com.ar/home">
+        <input class="boton_Donacion_Mp" type="button" value="$100"> 
+      </a>
+      
+      <a href="https://www.mercadopago.com.ar/home">
+        <input class="boton_Donacion_Mp" type="button" value="$100"> 
+      </a>
+      <a href="https://www.mercadopago.com.ar/home">
+        <input class="boton_Donacion_Mp" type="button" value="$100"> 
+      </a>
+      <a href="https://www.mercadopago.com.ar/home">
+        <input class="boton_Donacion_Mp" type="button" value="$100"> 
+      </a>
+      </div>
+      </section>
+      
     </main>
 
       
@@ -116,6 +126,7 @@
     </footer>
 
     <script src="js/acciones.js"></script>
+    <script src="js/donacion.js"></script>
 
 </body>
 

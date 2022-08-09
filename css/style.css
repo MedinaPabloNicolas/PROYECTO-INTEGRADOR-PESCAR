@@ -418,17 +418,3 @@ img {
     background: transparent;
   }
 }
-/* Donaciones   */
-.contenedor_donacion{
-margin: 0 auto;
-max-width: 1250px;
-flex-wrap: wrap;
-}
-.boton_donacion{
-
-}
-.img_donacion{
-  border: 1rem;
-  height: 100px;
-  width: 150px;
-}

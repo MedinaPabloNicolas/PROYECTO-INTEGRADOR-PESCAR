@@ -484,3 +484,35 @@ img {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+/*Segunda Tabla*/
+
+.contenedor_comparacion{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tabla_comparacion{
+  margin: auto;
+  width: min(1250px, 100%);
+}
+
+.tabla_comparacion tr{
+  border-collapse: collapse;
+}
+
+.tabla_comparacion,
+.tabla_comparacion tr,
+.tabla_comparacion td{
+  padding: 2rem;
+  border: 1px solid var(--negro);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.none_tabla{
+  border: none;
+}

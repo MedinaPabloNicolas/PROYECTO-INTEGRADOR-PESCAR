@@ -18,10 +18,13 @@ function ingredientes() {
     tiempoElegido(9999, letra.value, "todo");
 }
 
-function tiempoElegido(t, i, n) { //tiempo, ingredientes y nombre
+function tiempoElegido(t, i, n) {
+    //tiempo, ingredientes y nombre
+
 
     const main = document.querySelector("main");
     main.innerHTML = " ";
+
     recetas.forEach(function (receta) {
 
         if (receta[1] <= t) {
@@ -53,7 +56,7 @@ function tiempoElegido(t, i, n) { //tiempo, ingredientes y nombre
                     //funciona alert(receta[1]);
 
                     img.src = "img/" + receta[3];
-                    h4.style.textTransform = "capitalize"
+                    h4.style.textTransform = "capitalize";
                     h4.textContent = receta[0];
 
                     var a = document.createElement("h4");
@@ -69,6 +72,10 @@ function tiempoElegido(t, i, n) { //tiempo, ingredientes y nombre
                     article.appendChild(div);
                     article.appendChild(divContenido);
                     main.appendChild(article);
+
+                    document.documentElement.scrollTop = 600;//al seleccionar el tiempo, te transporta 600px para abajo
+
+                    console.log(document.documentElement.scrollTop);
                 }
             }
         }

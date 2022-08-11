@@ -26,11 +26,35 @@ buscarTiempo.addEventListener('click', function () {
      mostrarTiempo[1].style.opacity = "1";
      mostrarTiempo[2].style.opacity = "1";
  */
+
     let pepe = document.getElementsByClassName("buscar--texto");
     pepe[0].classList.remove("buscar--texto--abierto");
     pepe[1].classList.remove("buscar--texto--abierto");
 });
+// ---------------------------------------------------------
+// ejemplo de como seria si elijo un rango de tiempo y quiero que escrollee la pantalla para abajo. Esto se resolvio en la carpeta recetas.js 
 
+// const tiempo1 = document.getElementsByClassName('item');
+// console.log(tiempo);
+// tiempo[0].addEventListener('click', function () {
+// document.documentElement.scrollTop = 800;
+// console.log(document.documentElement.scrollTop);
+// });
+
+// const tiempo2 = document.getElementsByClassName('item');
+// console.log(tiempo2);
+// tiempo2[1].addEventListener('click', function () {
+//     document.documentElement.scrollTop = 800;
+//     console.log(document.documentElement.scrollTop);
+// });
+
+// const tiempo3 = document.getElementsByClassName('item');
+// console.log(tiempo3);
+// tiempo3[2].addEventListener('click', function () {
+//     document.documentElement.scrollTop = 800;
+//     console.log(document.documentElement.scrollTop);
+// });
+// ----------------------------------------------------
 //canasta
 const buscarTexto = document.getElementById('boton-buscar-texto1');//con la constante agarro el id del icono
 buscarTexto.addEventListener('click', function () { //le digo que cuando le haga click al icono se ejecuta la funcion

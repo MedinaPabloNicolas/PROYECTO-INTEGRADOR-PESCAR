@@ -63,6 +63,7 @@ function tiempoElegido(t, i, n) {
                     a.classList.add("boton");
                     a.classList.add("boton--primario");
                     a.textContent = "Ver Mas";
+                    a.addEventListener('click', function () { cookie(receta); }); //llamo a 2 funciones para que no se ejecute al arrancar
 
                     divContenido.appendChild(h4);
                     divContenido.appendChild(a);
@@ -80,10 +81,11 @@ function tiempoElegido(t, i, n) {
             }
         }
     });
-
-
-
     console.log(n);
+}
+function cookie(receta) {//almacenamiento interno del navegador
+    // alert(receta);
+    localStorage.setItem('nombre', receta[0]);
 }
 
 

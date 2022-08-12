@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
+
+    <!--link estilo2-->
+    <link rel="stylesheet" href="css/estilo2.css" />
+
+    <!--Link Preload-->
+    <link rel="prereload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Link fuente Noto Serif italica-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+    <!--Link fuente Noto Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
+
+    <!-- <link rel="prereload" href="css/style.css" as="style">-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/TuReceta.css">
+
+    <!--script iconos-->
+    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="pegado barra" id="background">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">
+                    Your<span class="logo__bold">Time</span>
+                </h1>
+            </a>
+
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+            <nav class="navegacion topbar menu" id="menu">
+                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">
+                        Nosotros</span></a>
+                <a href="memresia.html" class="navegacion__enlace menu__item"><span
+                        class="menu__link">Membresia</span></a>
+                <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
+            </nav>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin" id="nombre">Lasana Bolonesa</h2>
+
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+
+            <div class="una-columna">
+                <!--EMPIEZA NOVEDADES-->
+
+                <article class="entrada__imagen2">
+
+                    <picture>
+                        <img loading="lazy" src="img/hamburguesa de alubias y soja.jpg"
+                            alt="lasana-bolonesa-lentejas-recetas-cocina" />
+                    </picture>
+                    <ul class="padding-left-0 double-column ingredientes">
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-0">
+                            <label for="ingrediente-0">
+                                2 tazas de Avena </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-1">
+                            <label for="ingrediente-1">
+                                1 taza de Chips de chocolate vegano </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-2">
+                            <label for="ingrediente-2">
+                                1 cucharadita de Levadura química </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-3">
+                            <label for="ingrediente-3">
+                                250 barras de Manteca vegetal </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-4">
+                            <label for="ingrediente-4">
+                                1 chorro de Agua </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-5">
+                            <label for="ingrediente-5">
+                                1 taza de Harina (140 gramos)
+                            </label>
+                        </li>
+                        <li class="ingrediente">
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-6">
+                            <label for="ingrediente-6">
+                                1 taza de Azúcar (200 gramos)
+                            </label>
+                        </li>
+                        <li id="barraProgreso">
+                            <div id="barra"></div>
+                        </li>
+                    </ul>
+
+
+                </article>
+                <p>
+                    Paso 1:
+                    <br>
+                    Cortamos 2 berenjenas por la mitad y les hacemos cortes en forma de rejilla. Las regamos con
+                    un poco de aceite de oliva
+                    y las horneamos 45 minutos a 200º. A continuación, las vaciamos con ayuda de una cuchara y
+                    reservamos la carne.
+                    <br>
+                    Paso 2:
+                    <br>
+                    En una sartén con aceite de oliva , pochamos 10 minutos 1 cebolla picada con sal. Añadimos
+                    la carne de las berenjenas, 2
+                    latas de atún escurridas, 1 cdta. de comino, 1 cdta. de pimentón dulce, sal y pimienta.
+                    Mezclamos bien y añadimos 50 ml.
+                    de tomate frito. Removemos de nuevo y cocinamos 5 minutos.
+                    <br>
+                    Paso 3:
+                    <br>
+                    Rellenamos las berenjenas con la mezcla queso especial para gratinar(Mozzarella) Gratinamos
+                    5 minutos a 200º.
+                </p>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="barra">
+            <a class="logo logo__footer" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">
+                    Your<span class="logo__bold">Time</span>
+                </h1>
+            </a>
+            <nav class="nav-footer topbar">
+                <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
+                <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+                <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/acciones.js"></script>
+    <script src="js/recetas.js"></script>
+    <script>
+
+        let width = 0;
+        function check(pepe) {
+            if (pepe.checked) {
+                width = width + Math.round(100 / 7 * 10) / 10;
+
+            } else {
+                width = width - Math.round(100 / 7 * 10) / 10;
+            }
+            const barra = document.querySelector('#barra');
+            barra.style.width = width + "%";
+
+
+        }
+
+        // document.getElementById('nombre');
+        document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
+
+
+
+    </script>
+</body>
+
+</html>

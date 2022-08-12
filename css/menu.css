@@ -145,7 +145,7 @@ html {
     border-radius: 9px;
     outline: none; /* necesario para que el focus cambie el borde*/
     border: 2px solid white;
-    text-transform: lowercase;
+    text-transform: lowercase; /*transforma el texto en minusculas*/
   }
   input[type="text"]:focus {
     /*para cambiar el color al borde del input cuando esta seleccionado*/
@@ -278,6 +278,7 @@ html {
     outline: none; /* necesario para que el focus cambie el borde*/
     border: 2px solid white;
     height: fit-content;
+    text-transform: lowercase;
   }
   input[type="text"]:focus {
     /*para cambiar el color al borde del input cuando esta seleccionado*/

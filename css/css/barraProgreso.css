@@ -1,0 +1,12 @@
+#barraProgreso {
+  background-color: gray;
+  height: 30px;
+  position: relative;
+  width: 100%;
+}
+#barra {
+  background-color: brown;
+  height: 30px;
+  position: absolute;
+  width: 1%;
+}

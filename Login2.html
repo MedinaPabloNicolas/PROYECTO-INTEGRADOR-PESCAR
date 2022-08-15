@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El comienzo de algo grande</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
+
+    <!--link estilo2-->
+    <link rel="stylesheet" href="css/estilo2.css" />
+
+    <!--Link Preload-->
+    <link rel="prereload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Link fuente Noto Serif italica-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link fuente Noto Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <!-- <link rel="prereload" href="css/style.css" as="style">-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Login2.css">
+
+    <!--script iconos-->
+    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <header class="header ">
+        <div class="pegado barra" id="background">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
+            </a>
+
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+            
+        </div>
+        <div class="header__texto">
+            <section id="logIn">
+                <h1>Ingresar con mi usuario</h1>
+                
+                <form class="formulario1" action="" method="POST">
+                    
+                    <input title="Tip: Podés usar el email con el que te registraste en nuestra página." type="text" id="usuario" placeholder="Mi usuario" required>
+                    
+                    <input type="password" placeholder="Mi contraseña" required>
+                    <label class="sr-only" for="ingresar"></label>
+                    <label for="login" class="sr-only ">Ingresar | Log In</label>
+                    <input class="submit boton_ingresar" type="submit" id="login" value="Ingresar">
+                </form>
+                <ul>
+                    <li> <a href="">¿Olvidaste tu contraseña?</a></li>
+                    <li> <a href="membresia.html">Aún no tengo usuario, quiero registrarme</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </header>
+
+    </main>
+
+</body>
+</html>

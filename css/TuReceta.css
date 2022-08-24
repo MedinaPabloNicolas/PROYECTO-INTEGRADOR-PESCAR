@@ -8,10 +8,13 @@
   animation-timing-function: ease-in-out;
   background-image: url("../img/zyro-image.png");
 }
-
-.una-columna {
-  /* display: flex; */
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
 }
+/* .una-columna {
+  /* display: flex; */
+
 .entrada__imagen2 {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +38,7 @@
   height: 30px;
   position: relative;
   width: 100%;
+  min-width: 300px;
 }
 #barra {
   background-color: brown;

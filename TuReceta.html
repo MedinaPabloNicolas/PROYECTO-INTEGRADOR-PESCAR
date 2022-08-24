@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El comienzo de algo grande</title>
     <!--Prefetch-->
     <link rel="prefetch" href="nosotros.html" as="document" />
 
@@ -36,8 +36,9 @@
     <header class="header2">
         <div class="pegado barra" id="background">
             <a class="logo" href="index.html">
-                <h1 class="logo__nombre no-margin centrar-texto">
-                    Your<span class="logo__bold">Time</span>
+                <h1 class="logo__nombre no-margin ">
+                    <!-- Your<span class="logo__bold">Time</span> -->
+                    <img src="img/Logo.png" class="logo__size">
                 </h1>
             </a>
 
@@ -66,47 +67,14 @@
                 <article class="entrada__imagen2">
 
                     <picture>
-                        <img loading="lazy" src="img/hamburguesa de alubias y soja.jpg"
-                            alt="lasana-bolonesa-lentejas-recetas-cocina" />
+                        <img loading="lazy" src="img/0100.jpg" alt="" id="foto" />
                     </picture>
-                    <ul class="padding-left-0 double-column ingredientes">
-                        <li class="ingrediente">
+                    <ul class="ingredientes" id="lista-ingrediente">
+                        <!-- <li>
                             <input type="checkbox" onclick='check(this)' id="ingrediente-0">
-                            <label for="ingrediente-0">
-                                2 tazas de Avena </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-1">
-                            <label for="ingrediente-1">
-                                1 taza de Chips de chocolate vegano </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-2">
-                            <label for="ingrediente-2">
-                                1 cucharadita de Levadura química </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-3">
-                            <label for="ingrediente-3">
-                                250 barras de Manteca vegetal </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-4">
-                            <label for="ingrediente-4">
-                                1 chorro de Agua </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-5">
-                            <label for="ingrediente-5">
-                                1 taza de Harina (140 gramos)
-                            </label>
-                        </li>
-                        <li class="ingrediente">
-                            <input type="checkbox" onclick='check(this)' id="ingrediente-6">
-                            <label for="ingrediente-6">
-                                1 taza de Azúcar (200 gramos)
-                            </label>
-                        </li>
+                            <label for="ingrediente-0">2 tazas de Avena </label>
+                        </li> -->
+
                         <li id="barraProgreso">
                             <div id="barra"></div>
                         </li>
@@ -158,24 +126,53 @@
     <script src="js/recetas.js"></script>
     <script>
 
+        let cantidadIngrediente = 0;
         let width = 0;
-        function check(pepe) {
-            if (pepe.checked) {
-                width = width + Math.round(100 / 7 * 10) / 10;
 
-            } else {
-                width = width - Math.round(100 / 7 * 10) / 10;
-            }
-            const barra = document.querySelector('#barra');
-            barra.style.width = width + "%";
-
-
-        }
 
         // document.getElementById('nombre');
         document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
 
+        let ingrediente = localStorage.getItem('ingredientes');
+        console.log(ingrediente);
+        let ingrediente_array = ingrediente.split(',');
 
+        cantidadIngrediente = ingrediente_array.length;
+
+        for (let q in ingrediente_array) {
+
+            console.log(q + ':', ingrediente_array[q]);
+            var li = document.createElement('li');
+            var ul = document.getElementById('lista-ingrediente');
+            // ul.appendChild(li);
+
+            var input = document.createElement('input');
+            input.type = "checkbox";
+            input.onclick = function () {
+                check(this);
+            };
+            li.appendChild(input);
+
+            var label = document.createElement('label');
+            label.textContent = " " + ingrediente_array[q];
+            li.appendChild(label);
+
+            ul.insertAdjacentElement("afterbegin", li);
+        }
+
+        function check(pepe) {
+            if (pepe.checked) {
+                width = width + Math.round(100 / cantidadIngrediente * 10) / 10;
+
+            } else {
+                width = width - Math.round(100 / cantidadIngrediente * 10) / 10;
+            }
+            const barra = document.querySelector('#barra');
+            barra.style.width = width + "%";
+        }
+
+        let fotos = localStorage.getItem('foto');
+        document.getElementById('foto').src = "img/" + fotos
 
     </script>
 </body>

@@ -82,8 +82,8 @@
 
 
                 </article>
-                <p>
-                    Paso 1:
+                <p id="procedimiento_p">
+                    <!-- Paso 1:
                     <br>
                     Cortamos 2 berenjenas por la mitad y les hacemos cortes en forma de rejilla. Las regamos con
                     un poco de aceite de oliva
@@ -101,7 +101,7 @@
                     Paso 3:
                     <br>
                     Rellenamos las berenjenas con la mezcla queso especial para gratinar(Mozzarella) Gratinamos
-                    5 minutos a 200º.
+                    5 minutos a 200º. -->
                 </p>
 
 
@@ -110,16 +110,18 @@
     </main>
     <footer class="footer">
         <div class="barra">
-            <a class="logo logo__footer" href="index.html">
+            <!-- <a class="logo logo__footer" href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto">
                     Your<span class="logo__bold">Time</span>
                 </h1>
-            </a>
+            </a> -->
             <nav class="nav-footer topbar">
                 <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
                 <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
                 <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
             </nav>
+            <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
+
         </div>
     </footer>
     <script src="js/acciones.js"></script>
@@ -151,28 +153,38 @@
             input.onclick = function () {
                 check(this);
             };
-            li.appendChild(input);
 
             var label = document.createElement('label');
             label.textContent = " " + ingrediente_array[q];
-            li.appendChild(label);
 
-            ul.insertAdjacentElement("afterbegin", li);
+            label.insertAdjacentElement("afterbegin", input); //pone el input a la izq del label
+            li.appendChild(label);
+            ul.insertAdjacentElement("afterbegin", li);// lo pone a acontinuacion del label
         }
 
-        function check(pepe) {
+
+        function check(pepe) { //barra de progreso
             if (pepe.checked) {
                 width = width + Math.round(100 / cantidadIngrediente * 10) / 10;
 
             } else {
                 width = width - Math.round(100 / cantidadIngrediente * 10) / 10;
             }
+            //cuando hay mas de 5 recetas, empezas a destildar la checkbox y te queda la barra de progreso marcada. Entoces le decimos que si el ancho es menor a 5 que lo fuerze a 0 para que no pinte la barra.
+            if (width < 5) {
+                width = 0;
+            }
             const barra = document.querySelector('#barra');
             barra.style.width = width + "%";
+            console.log(cantidadIngrediente, width);
         }
 
         let fotos = localStorage.getItem('foto');
-        document.getElementById('foto').src = "img/" + fotos
+        document.getElementById('foto').src = "img/" + fotos;
+
+        let procedimiento = localStorage.getItem('procedimientos');
+        console.log(procedimiento);
+        document.getElementById('procedimiento_p').innerHTML = procedimiento;
 
     </script>
 </body>

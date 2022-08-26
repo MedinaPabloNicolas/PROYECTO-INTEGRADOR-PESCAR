@@ -102,7 +102,7 @@ function cookie(receta) {//almacenamiento interno del navegador
     localStorage.setItem('nombre', receta[0]);
     localStorage.setItem('ingredientes', receta[2]);
     localStorage.setItem('foto', receta[3]);
-    localStorage.setItem('receta', receta[6]);
+    localStorage.setItem('procedimientos', receta[6]);
 }
 
 

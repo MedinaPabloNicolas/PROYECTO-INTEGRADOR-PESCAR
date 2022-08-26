@@ -34,15 +34,23 @@
   list-style: none;
 }
 #barraProgreso {
-  background-color: gray;
+  background-color: rgb(85, 83, 83);
   height: 30px;
   position: relative;
   width: 100%;
-  min-width: 300px;
+  min-width: min(65vw, 300px);
 }
 #barra {
-  background-color: brown;
+  background-color: #343759;
   height: 30px;
   position: absolute;
   width: 0%;
+}
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  font-size: smaller;
 }

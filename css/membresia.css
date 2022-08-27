@@ -114,3 +114,35 @@
     scroll-snap-stop: always;
   }
   
+
+/*BOTON DESPLAZAMIENTO*/
+
+.menu_desplazamiento{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+
+  position:fixed;
+  right: 10px;
+  top: 40%;
+
+}
+
+.menu_desplazamiento li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu_desplazamiento li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}

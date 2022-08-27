@@ -127,13 +127,12 @@
     <script src="js/acciones.js"></script>
     <script src="js/recetas.js"></script>
     <script>
+        document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
+        // ---------------------------------
 
         let cantidadIngrediente = 0;
         let width = 0;
-
-
         // document.getElementById('nombre');
-        document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
 
         let ingrediente = localStorage.getItem('ingredientes');
         console.log(ingrediente);
@@ -176,15 +175,19 @@
             }
             const barra = document.querySelector('#barra');
             barra.style.width = width + "%";
+            barra.style.transition = "width 1s";
             console.log(cantidadIngrediente, width);
         }
-
+        // ---------------------------------
         let fotos = localStorage.getItem('foto');
         document.getElementById('foto').src = "img/" + fotos;
-
+        // ---------------------------------
         let procedimiento = localStorage.getItem('procedimientos');
         console.log(procedimiento);
+        procedimiento = procedimiento.replaceAll(/(Paso [0-9]:)(?!.*\1)/g, '<br>$1<br>');
         document.getElementById('procedimiento_p').innerHTML = procedimiento;
+
+
 
     </script>
 </body>

@@ -78,3 +78,17 @@ buscarTexto2.addEventListener('click', function () {
 
     mostrarTextoLupa.classList.toggle('buscar--texto--abierto');
 });
+
+//-------------------Cambio de login a nombre de usuario-------------------
+
+const cambioNombre = document.getElementById('usuario');
+const pepe = localStorage.getItem('nombreUsuario'); //acordarse de ponerlo en el js de Login    
+if (pepe == undefined) {
+    cambioNombre.innerHTML = "Login";
+
+} else {
+    cambioNombre.innerHTML = pepe;
+}
+
+
+

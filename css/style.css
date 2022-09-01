@@ -78,11 +78,11 @@ img {
 .header {
   height: 100vh;
   margin-bottom: 3rem;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* backface-visibility: hidden; */
-  animation: header 50s linear infinite 3s;
+  backface-visibility: hidden;
+  animation: header 50s infinite linear;
   animation-timing-function: ease-in-out;
   background-image: url("../img/zyro-image.png");
 }
@@ -94,13 +94,13 @@ img {
     background-image: url("../img/categoria.jpg");
   }
   50% {
-    background-image: url("../img/membresia.jpg");
+    background-image: url("../img/blog3.jpg");
   }
   75% {
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/blog1.jpg");
   }
   100% {
-    background-image: url("../img/curso1.jpg");
+    background-image: url("../img/zyro-image.png");
   }
 }
 

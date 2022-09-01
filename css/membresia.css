@@ -98,17 +98,15 @@
   /*Desplazamiento*/
 
   html{
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    overflow: auto;
     scroll-snap-type: y mandatory;
     
   }
 
   header,
   .contenedor_tabla,
-  .contenedor_comparacion{
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
+  .contenedor_comparacion,
   footer{
     scroll-snap-align: start;
     scroll-snap-stop: always;

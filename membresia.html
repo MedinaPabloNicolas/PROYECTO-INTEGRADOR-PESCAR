@@ -12,6 +12,10 @@
     <!--link estilo2-->
     <link rel="stylesheet" href="css/estilo2.css" />
 
+    <!--link membresia.css-->
+    <link rel="prefetch" href="css/membresia.css" as="membresia" />
+    <link rel="stylesheet" href="css/membresia.css" />
+
     <!--Link Preload-->
     <link rel="prereload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -38,7 +42,7 @@
 </head>
  
 <body>
-    <header class="header ">
+    <header class="header" id="slide1">
         <div class="pegado barra" id="background">
             <a class="logo" href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
@@ -48,7 +52,7 @@
 
             <nav class="navegacion topbar menu" id="menu">
                 <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
-                <a href="memresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+                <a href="membresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
                 <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Categoria</span></a>
                 <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
             </nav>
@@ -59,9 +63,104 @@
             <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
 
         </div>
+        
     </header>
 
-    <main>
+    <ul class="menu_desplazamiento">
+      <li>
+        <a href="#slide1"></a>
+      </li>
+      <li>
+        <a href="#slide2"></a>
+      </li>
+      <li>
+        <a href="#slide3"></a>
+      </li>
+    </ul>
+
+    <main class="scroll-container">
+      <section class="contenedor_tabla" id="slide2">
+        
+        <div class="tabla_precio">
+          <h2>standard</h2>
+          <div class="star_tabla">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>100 <sub>$</sub></h3>
+          <p>Paga ahora y recibe un 30% de descuento</p>
+          <p>Paga ahora y recibe un 30% de descuento</p>
+          <a href="#" class="boton_precio">Pagar Ahora</a>
+        </div>
+        <div class="tabla_precio">
+          <h2>Premium</h2>
+          <div class="star_tabla">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>500 <sub>$</sub></h3>
+          <p>Paga ahora y recibe un 30% de descuento</p>
+          <p>Paga ahora y recibe un 30% de descuento</p>
+          <a href="#" class="boton_precio">Pagar Ahora</a>
+        </div>
+      </section>
+
+      <section class="contenedor_comparacion" id="slide3">
+          <table class="tabla_comparacion">
+            <tr>
+              <td class="none_tabla"></td>
+              <td>FREE</td>
+              <td>standard</td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Opcion1</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td>Opcion2</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td>Opcion3</td>
+              <td>-</i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td>Opcion4</td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td>Opcion5</td>
+              <td>-</td>
+              <td>-</i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td>Opcion6</td>
+              <td>-</td>
+              <td>-</i></td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="none_tabla"></td>
+              <td>-</td>
+              <td>$100</td>
+              <td>$500</td>
+            </tr>
+          </table>
+      </section>
 
     </main>
 

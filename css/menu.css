@@ -2,9 +2,12 @@ html {
   scroll-behavior: smooth;
   /* relentiza el scrool automatico ejecutado cuando elijen que filtro usar */
 }
-.contenedor {
-  margin-top: 30px;
+
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
 }
+
 .label {
   /* le digo que tiene que hacer*/
 
@@ -21,7 +24,17 @@ html {
   display: block;
 }
 
-@media (min-width: 460px) {
+
+.iconos-alineados {
+    display: flex;
+    align-items: center;
+    padding-top: 15vh;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+@media (min-width: 500px) {
   .tiempo {
     text-transform: uppercase; /* texto en mayuscula*/
     color: rgba(255, 255, 255, 0.8);
@@ -136,8 +149,11 @@ html {
   .iconos-alineados {
     display: flex;
     align-items: flex-start;
+    flex-direction:row;
     padding-top: 25vh;
     justify-content: space-around;
+
+
   }
   input[type="text"] {
     /*solo para input y se escribe texto*/
@@ -283,5 +299,17 @@ html {
   input[type="text"]:focus {
     /*para cambiar el color al borde del input cuando esta seleccionado*/
     border: 2px solid white;
+  }
+}
+
+.entrada:nth-child(1){
+    margin-top: 3rem;
+  }
+
+@media (min-width: 800px) {
+  .entrada:nth-child(1),
+  .entrada:nth-child(2),
+  .entrada:nth-child(3){
+    margin-top: 3rem;
   }
 }

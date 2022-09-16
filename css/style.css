@@ -79,7 +79,6 @@ img {
 /*------------------Header------------------*/
 .header {
   height: 100vh;
-  margin-bottom: 3rem;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,6 +103,11 @@ img {
   100% {
     background-image: url("../img/zyro-image.png");
   }
+}
+
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
 }
 
 .header__texto {
@@ -239,6 +243,15 @@ img {
   /* margin-top: 3rem; */
 }
 
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  font-size: smaller;
+}
+
 .logo__footer {
   text-align: center;
   width: auto;
@@ -329,33 +342,6 @@ img {
 }
 .campo__field--textarea {
   height: 20rem;
-}
-
-/*INFORMACION DE LA IMG*/
-
-.entrada__imagen picture img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 500ms ease-out;
-}
-
-.entrada__imagen picture .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 98.5%;
-  background-color: #0000005f;
-  color: #ffffff;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-}
-
-.entrada__imagen picture:hover > .capa {
-  opacity: 1;
-  visibility: visible;
 }
 
 /*MENU HAMBURGUESA*/

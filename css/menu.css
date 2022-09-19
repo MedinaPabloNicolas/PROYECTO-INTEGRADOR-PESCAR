@@ -24,15 +24,14 @@ html {
   display: block;
 }
 
-
 .iconos-alineados {
-    display: flex;
-    align-items: center;
-    padding-top: 15vh;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  align-items: center;
+  padding-top: 15vh;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 @media (min-width: 500px) {
   .tiempo {
@@ -149,11 +148,9 @@ html {
   .iconos-alineados {
     display: flex;
     align-items: flex-start;
-    flex-direction:row;
+    flex-direction: row;
     padding-top: 25vh;
     justify-content: space-around;
-
-
   }
   input[type="text"] {
     /*solo para input y se escribe texto*/
@@ -302,14 +299,14 @@ html {
   }
 }
 
-.entrada:nth-child(1){
-    margin-top: 3rem;
-  }
+.entrada:nth-child(1) {
+  margin-top: 3rem;
+}
 
 @media (min-width: 800px) {
   .entrada:nth-child(1),
   .entrada:nth-child(2),
-  .entrada:nth-child(3){
+  .entrada:nth-child(3) {
     margin-top: 3rem;
   }
 }

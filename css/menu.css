@@ -116,6 +116,7 @@ html {
 
   .canasta {
     cursor: pointer;
+    text-transform: lowercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +139,7 @@ html {
 
   .lupa {
     cursor: pointer;
+    text-transform: lowercase;
     display: flex;
     justify-content: center;
     align-items: center;

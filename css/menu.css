@@ -13,10 +13,10 @@ html {
 
   cursor: pointer;
   pointer-events: all;
-  font-size: 260%;
+  font-size: 310%; /*260%*/
 }
 .icono--boton {
-  font-size: 260%;
+  font-size: 310%;
 }
 .icono--boton:hover {
   transition: 1s;
@@ -27,7 +27,7 @@ html {
 .iconos-alineados {
   display: flex;
   align-items: center;
-  padding-top: 15vh;
+  padding-top: 5vh;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -170,7 +170,7 @@ html {
 
 /*----------------------------RESPONSIVE-----------------------*/
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .label {
     font-size: 200%;
   }

@@ -79,7 +79,7 @@ img {
 /*------------------Header------------------*/
 .header {
   height: 100vh;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   backface-visibility: hidden;
@@ -314,7 +314,7 @@ img {
 
 /*Contacto*/
 
-.contacto-bg {
+/* .contacto-bg {
   background-image: url(../img/contacto.jpg);
   height: 40rem;
   background-size: cover;
@@ -342,7 +342,7 @@ img {
 }
 .campo__field--textarea {
   height: 20rem;
-}
+} */
 
 /*MENU HAMBURGUESA*/
 
